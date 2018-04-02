@@ -1,14 +1,4 @@
-# Data_Science
-Data Science using Python and R
+# Supervised learning
 
-
-
-## [Supervised learning](Supervised-Learning/README.md)
-
-## [Unsupervised learning](Unsupervised-Learning/README.md)
-
-## [Loss functions](Loss-Functions/README.md)
-
-## [Optimization algorithms](Optimization-Algorithms/README.md)
-
-
+## [Generalized Linear Models](Generalized-Linear-Models.md)
+## [Linear and Quadratic Discriminant Analysis](Linear-and-Quadratic-Discriminant-Analysis.md)
