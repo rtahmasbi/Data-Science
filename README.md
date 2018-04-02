@@ -1,4 +1,4 @@
-# Data_Science
+# Data Science
 Data Science using Python and R
 
 
@@ -10,5 +10,3 @@ Data Science using Python and R
 ## [Loss functions](Loss-Functions/README.md)
 
 ## [Optimization algorithms](Optimization-Algorithms/README.md)
-
-
