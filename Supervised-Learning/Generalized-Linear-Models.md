@@ -2,9 +2,25 @@
 
 ## Ordinary Least Squares
 
+R
 ```[R]
 lm(y~X)
 ```
+
+scikit-learn
+```[python]
+import numpy as np
+from sklearn import linear_model
+
+data = np.loadtxt('../Data/boston2.txt')
+data.shape
+X = data[:,0:12]
+y = data[:,12]
+reg = linear_model.LinearRegression()
+reg.fit(X,y)
+reg.coef_
+```
+
 
 ## Ridge Regression
 ## Lasso
