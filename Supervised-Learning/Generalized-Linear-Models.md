@@ -1,14 +1,16 @@
 # Generalized Linear Models
 
-```
+Simulating data:
+```python
 from sklearn.datasets import make_regression
 X, y = make_regression(n_features=2, random_state=0)
 ```
 
-```
+```python
 from sklearn.datasets import make_classification
 X, y = make_classification(n_features=4, random_state=0)
 ```
+
 
 
 ## Ordinary Least Squares
