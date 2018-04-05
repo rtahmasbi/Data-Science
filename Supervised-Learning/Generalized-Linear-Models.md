@@ -14,7 +14,7 @@ X, y = make_classification(n_features=4, random_state=0)
 ## Ordinary Least Squares
 
 R
-```[R]
+```R
 data <- read.table('../Data/boston2.txt')
 dim(data)
 reg <- lm(V13~., data=data)
@@ -29,7 +29,7 @@ coef(reg)
 ```
 
 scikit-learn
-```[python]
+```python
 import numpy as np
 from sklearn import linear_model
 
@@ -50,7 +50,7 @@ reg.coef_
 
 
 TensorFlow
-```[python]
+```python
 
 import numpy as np
 import tensorflow as tf
@@ -87,7 +87,7 @@ with tf.Session() as sess:
 
 
 TensorFlow
-```[python]
+```python
 import numpy as np
 import tensorflow as tf
 data = np.loadtxt('../Data/boston2.txt')
@@ -117,7 +117,7 @@ for value in results:
 
 ## Ridge Regression
 
-```
+```python
 from sklearn import linear_model
 reg = linear_model.Ridge(alpha = .5)
 reg.fit ([[0, 0], [0, 0], [1, 1]], [0, .1, 1])
@@ -127,7 +127,7 @@ reg.coef_
 
 ## Lasso
 
-```[python]
+```python
 from sklearn import linear_model
 reg = linear_model.Lasso(alpha = 0.1)
 reg.fit([[0, 0], [1, 1]], [0, 1])
@@ -137,7 +137,7 @@ reg.predict([[1, 1]])
 ## Multi-task Lasso
 ## Elastic Net
 
-```[python]
+```python
 from sklearn.linear_model import ElasticNet
 regr = ElasticNet(random_state=0)
 regr.fit(X, y)
@@ -148,7 +148,7 @@ regr.predict([[0, 0]])
 
 ## Multi-task Elastic Net
 
-```[python]
+```python
 from sklearn import linear_model
 clf = linear_model.MultiTaskElasticNet(alpha=0.1)
 clf.fit([[0,0], [1, 1], [2, 2]], [[0, 0], [1, 1], [2, 2]])
@@ -164,7 +164,7 @@ clf.fit([[0,0], [1, 1], [2, 2]], [[0, 0], [1, 1], [2, 2]])
 ## Logistic regression
 ## Stochastic Gradient Descent - SGD
 
-```[python]
+```python
 from sklearn import linear_mode
 clf = linear_model.SGDRegressor()
 clf.fit(X, Y)

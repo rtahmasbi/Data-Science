@@ -1,4 +1,4 @@
-
+```python
 from sklearn.datasets import load_boston
 import gzip
 
@@ -21,8 +21,4 @@ f.close()
 
 data = np.loadtxt('boston2.txt')
 
-
-
-
-
-#
+```
