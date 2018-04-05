@@ -86,8 +86,6 @@ with tf.Session() as sess:
 
 
 
-
-
 TensorFlow
 ```[python]
 import numpy as np
@@ -129,26 +127,32 @@ reg.coef_
 
 ## Lasso
 
+```[python]
 from sklearn import linear_model
 reg = linear_model.Lasso(alpha = 0.1)
 reg.fit([[0, 0], [1, 1]], [0, 1])
 reg.predict([[1, 1]])
+```
 
 ## Multi-task Lasso
 ## Elastic Net
+
+```[python]
 from sklearn.linear_model import ElasticNet
 regr = ElasticNet(random_state=0)
 regr.fit(X, y)
 regr.intercept_
 regr.coef_
 regr.predict([[0, 0]])
-
+```
 
 ## Multi-task Elastic Net
 
+```[python]
 from sklearn import linear_model
 clf = linear_model.MultiTaskElasticNet(alpha=0.1)
 clf.fit([[0,0], [1, 1], [2, 2]], [[0, 0], [1, 1], [2, 2]])
+```
 
 
 ## Least Angle Regression
@@ -160,10 +164,12 @@ clf.fit([[0,0], [1, 1], [2, 2]], [[0, 0], [1, 1], [2, 2]])
 ## Logistic regression
 ## Stochastic Gradient Descent - SGD
 
+```[python]
 from sklearn import linear_mode
 clf = linear_model.SGDRegressor()
 clf.fit(X, Y)
 clf.predict([[-0.8, -1]])
+```
 
 
 ## Perceptron
