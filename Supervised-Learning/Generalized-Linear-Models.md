@@ -30,7 +30,7 @@ coef(reg)
 
 ```
 
-scikit-learn
+Python3 and `scikit-learn`
 ```python
 import numpy as np
 from sklearn import linear_model
@@ -51,9 +51,8 @@ reg.coef_
 ```
 
 
-TensorFlow
+Python3 and `TensorFlow`
 ```python
-
 import numpy as np
 import tensorflow as tf
 data = np.loadtxt('../Data/boston2.txt')
@@ -88,7 +87,7 @@ with tf.Session() as sess:
 
 
 
-TensorFlow
+Python3 and `TensorFlow`
 ```python
 import numpy as np
 import tensorflow as tf
@@ -118,12 +117,78 @@ for value in results:
 
 
 ## Ridge Regression
+Ridge regression uses L2 regularisation to weight/penalise residuals when the parameters of a regression model are being learned.
 
+R using `glmnet` library
+```R
+library(glmnet)
+data <- read.table('../Data/boston2.txt')
+dim(data)
+X <- as.matrix(data[,1:12])
+y <- data[,13]
+
+lambdas <- 10^seq(3, -2, by = -.1)
+
+fit <- glmnet(X, y, alpha = 0, lambda = lambdas) #alpha=0 is ridge, =1 is lasso
+summary(fit)
+cv_fit <- cv.glmnet(X, y, alpha = 0, lambda = lambdas)
+plot(cv_fit)
+opt_lambda <- cv_fit$lambda.min
+opt_lambda
+y_predicted <- predict(fit, s = opt_lambda, newx = X)
+mean((y-y_predicted)^2)
+
+plot(y)
+lines(y_predicted)
+```
+
+
+R using `MASS` library
+```R
+library(MASS)
+data <- read.table('../Data/boston2.txt')
+dim(data)
+X <- as.matrix(data[,1:12])
+y <- data[,13]
+
+lambdas <- 10^seq(3, -2, by = -.1)
+
+fit <- lm.ridge(y ~ X)
+summary(fit)
+
+cv_fit <- lm.ridge(y ~ X, lambda = lambdas)
+whichIsBest <- which.min(cv_fit$GCV)
+opt_lambda <- cv_fit$lambda[whichIsBest]
+opt_lambda
+
+
+fit2 <- lm.ridge(y ~ X, lambda = opt_lambda)
+y_predicted <- as.matrix(cbind(const=1,X)) %*% coef(fit2)
+mean((y-y_predicted)^2)
+
+plot(y)
+lines(y_predicted)
+```
+
+
+Python3 and `scikit-learn`
 ```python
+import numpy as np
 from sklearn import linear_model
+from sklearn import metrics
+
+data = np.loadtxt('../Data/boston2.txt')
+data.shape
+X = data[:,0:12]
+y = data[:,12]
+
 reg = linear_model.Ridge(alpha = .5)
-reg.fit ([[0, 0], [0, 0], [1, 1]], [0, .1, 1])
-reg.coef_
+reg.fit(X,y)
+
+y_predict = reg.predict(X)
+
+mse = metrics.mean_squared_error(y, y_predict)
+mse
 ```
 
 
