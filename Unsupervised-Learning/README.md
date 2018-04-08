@@ -1,6 +1,6 @@
 # Unsupervised learning
 
-- [Gaussian mixture models](Gaussian-mixture-models.md)
+- [Gaussian mixture models](Gaussian-Mixture-Models.md)
 - [Manifold learning](Manifold-Learning.md)
 - [Clustering](Clustering.md)
 - [Biclustering](Biclustering.md)
