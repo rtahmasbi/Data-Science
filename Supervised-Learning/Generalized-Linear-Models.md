@@ -229,6 +229,27 @@ clf.fit([[0,0], [1, 1], [2, 2]], [[0, 0], [1, 1], [2, 2]])
 ## Bayesian Ridge Regression
 ## Automatic Relevance Determination - ARD
 ## Logistic regression
+
+R
+```R
+data <- read.table('../Data/boston2.txt')
+dim(data)
+X <- as.data.frame(data[,1:12])
+y <- data[,13]
+y_bin <- (y>mean(y)) * 1 # create binary var
+model <- glm(y_bin ~ X,family=binomial(link='logit'))
+summary(model)
+
+y_predicted <- predict(model,newdata=X,type='response')
+
+y_predicted <- predict(fit, s = opt_lambda, newx = X)
+mean((y-y_predicted)^2)
+
+plot(y)
+lines(y_predicted)
+
+```
+
 ## Stochastic Gradient Descent - SGD
 
 ```python

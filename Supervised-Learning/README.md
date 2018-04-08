@@ -3,7 +3,7 @@
 - [Generalized Linear Models](Generalized-Linear-Models.md)
 - [Linear and Quadratic Discriminant Analysis](Linear-and-Quadratic-Discriminant-Analysis.md)
 - Kernel ridge regression
-- Support Vector Machines
+- [Support vector machines](Support-Vector-Machines.md)
 - Stochastic Gradient Descent
 - Nearest Neighbors
 - Gaussian Processes
@@ -16,4 +16,4 @@
 - Semi-Supervised
 - Isotonic regression
 - Probability calibration
-- Neural network models
+- [Neural network models](Neural-Network-Models.md)

@@ -26,7 +26,7 @@ Memory
 - `tf.train.AdagradOptimizer` The algorithms dynamically incorporate knowledge of the geometry of the data observed in earlier iterations to perform more informative gradient-based learning. Informally, The procedures give frequently occurring features very low learning rates and infrequent features high learning rates, where the intuition is that each time an infrequent feature is seen, the learner should “take notice.”
 - `tf.train.AdagradDAOptimizer`
 - `tf.train.MomentumOptimizer` Momentum is a method that helps accelerate Stochastic Gradient Descent (SGD) in the relevant direction and dampens oscillations
-- `tf.train.AdamOptimizer` Adaptive Moment Estimation (Adam)
+- `tf.train.AdamOptimizer` Adaptive Moment Estimation (Adam). Adam is similar to SGD in a sense that it is a stochastic optimizer, but it can automatically adjust the amount to update parameters based on adaptive estimates of lower-order moments.
 - `tf.train.FtrlOptimizer` Follow the Regularized Leader
 - `tf.train.ProximalGradientDescentOptimizer`
 - `tf.train.ProximalAdagradOptimizer`
