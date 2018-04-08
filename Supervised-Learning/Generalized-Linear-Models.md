@@ -30,7 +30,7 @@ coef(reg)
 
 ```
 
-Python3 and `scikit-learn`
+Python3 with `scikit-learn`
 ```python
 import numpy as np
 from sklearn import linear_model
@@ -51,7 +51,7 @@ reg.coef_
 ```
 
 
-Python3 and `TensorFlow`
+Python3 with `TensorFlow`
 ```python
 import numpy as np
 import tensorflow as tf
@@ -87,7 +87,7 @@ with tf.Session() as sess:
 
 
 
-Python3 and `TensorFlow`
+Python3 with `TensorFlow`
 ```python
 import numpy as np
 import tensorflow as tf
@@ -119,7 +119,7 @@ for value in results:
 ## Ridge Regression
 Ridge regression uses L2 regularisation to weight/penalise residuals when the parameters of a regression model are being learned.
 
-R using `glmnet` library
+R with `glmnet` library
 ```R
 library(glmnet)
 data <- read.table('../Data/boston2.txt')
@@ -143,7 +143,7 @@ lines(y_predicted)
 ```
 
 
-R using `MASS` library
+R with `MASS` library
 ```R
 library(MASS)
 data <- read.table('../Data/boston2.txt')
@@ -171,7 +171,7 @@ lines(y_predicted)
 ```
 
 
-Python3 and `scikit-learn`
+Python3 with `scikit-learn`
 ```python
 import numpy as np
 from sklearn import linear_model
@@ -204,7 +204,7 @@ lasso.pred <- predict(lasso.mod, s = bestlam, newx = x[test,])
 
 ```
 
-
+Python3 with `scikit-learn`
 ```python
 from sklearn import linear_model
 reg = linear_model.Lasso(alpha = 0.1)
@@ -214,7 +214,7 @@ reg.predict([[1, 1]])
 
 ## Multi-task Lasso
 ## Elastic Net
-
+Python3 with `scikit-learn`
 ```python
 from sklearn.linear_model import ElasticNet
 regr = ElasticNet(random_state=0)
@@ -226,6 +226,7 @@ regr.predict([[0, 0]])
 
 ## Multi-task Elastic Net
 
+Python3 with `scikit-learn`
 ```python
 from sklearn import linear_model
 clf = linear_model.MultiTaskElasticNet(alpha=0.1)
@@ -262,7 +263,7 @@ lines(y_predicted)
 ```
 
 ## Stochastic Gradient Descent - SGD
-
+Python3 with `scikit-learn`
 ```python
 from sklearn import linear_mode
 clf = linear_model.SGDRegressor()
