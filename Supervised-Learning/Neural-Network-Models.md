@@ -16,6 +16,8 @@ Both `MLPRegressor` and `MLPClassifier` use parameter `alpha` for regularization
 which helps in avoiding overfitting by penalizing weights with large magnitudes.
 
 Multi-layer Perceptron (MLP) is sensitive to feature scaling, so it is highly recommended to scale your data.
+
+Python3 with `scikit-learn`
 ```python
 from sklearn.preprocessing import StandardScaler
 scaler = StandardScaler()
@@ -30,7 +32,7 @@ X_test = scaler.transform(X_test)
 
 MLP trains using Backpropagation algorithm (Backpropagation is a method to calculate a gradient. Backpropagation is commonly used by the gradient descent optimization algorithm to adjust the weight of neurons by calculating the gradient of the loss function. Backpropagation can be used with any gradient-based optimizer, such as L-BFGS or truncated Newton).
 
-Python3 and `scikit-learn`
+Python3 with `scikit-learn`
 ```python
 import numpy as np
 from sklearn.neural_network import MLPClassifier
@@ -51,7 +53,7 @@ clf.predict([[2., 2.], [-1., -2.]])
 ### Regression
 MLP trains using Stochastic Gradient Descent, Adam, or L-BFGS.
 
-Python3 and `scikit-learn`
+Python3 with `scikit-learn`
 ```python
 import numpy as np
 from sklearn.neural_network import MLPRegressor
