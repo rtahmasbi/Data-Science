@@ -194,6 +194,17 @@ mse
 
 ## Lasso
 
+R with `glmnet` library
+```R
+library(glmnet)
+
+lambda <- 10^seq(10, -2, length = 100)
+lasso.mod <- glmnet(x[train,], y[train], alpha = 1, lambda = lambda) #alpha=0 is ridge, =1 is lasso
+lasso.pred <- predict(lasso.mod, s = bestlam, newx = x[test,])
+
+```
+
+
 ```python
 from sklearn import linear_model
 reg = linear_model.Lasso(alpha = 0.1)

@@ -5,7 +5,7 @@
 - Kernel ridge regression
 - [Support vector machines](Support-Vector-Machines.md)
 - Stochastic Gradient Descent
-- Nearest Neighbors
+- [Nearest Neighbors](Nearest-Neighbors.md)
 - Gaussian Processes
 - Cross decomposition
 - Naive Bayes
