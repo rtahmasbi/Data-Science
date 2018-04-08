@@ -58,7 +58,9 @@ from sklearn.neural_network import MLPRegressor
 
 ```
 
-R
+
+
+R with `neuralnet` library
 ```R
 library(neuralnet)
 Boston.scaled$medv <- scale(Boston$medv, center = min.medv, scale = max.medv - min.medv)

@@ -1,6 +1,6 @@
 # Support vector machines
 
-
+R with `e1071` library
 ```R
 library(e1071)
 
