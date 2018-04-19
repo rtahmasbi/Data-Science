@@ -12,3 +12,5 @@ More info:
 - [Optimization algorithms](Optimization-Algorithms/README.md)
 - [Cross validation](Cross-Validation/README.md)
 - [Distance](Distance/README.md)
+- [Python Libraries](Python-Libraries.md)
+- [Big Data](BigData.md)

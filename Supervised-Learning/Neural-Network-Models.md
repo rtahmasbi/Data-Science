@@ -87,3 +87,20 @@ Boston.nn.8 <- neuralnet(y, data=Boston.train.scaled, hidden=8, linear.output=TR
 pr.nn <- compute(Boston.nn.5.3,test_[,1:13])
 
 ```
+
+
+
+
+# Convolutional neural network (CNN)
+convolutional neural network (CNN, or ConvNet) is a class of deep, feed-forward artificial neural networks.
+CNNs use a variation of multilayer perceptrons designed to require minimal preprocessing. They are also known as shift invariant or space invariant artificial neural networks (SIANN), based on their shared-weights architecture and translation invariance characteristics.
+
+
+# Recurrent Neural Networks
+Time series, Morkov chains
+## LSTM Networks
+Long Short Term Memory networks – usually just called “LSTMs” – are a special kind of RNN, capable of learning long-term dependencies.
+python with TensorFlow:
+```python
+lstm = tf.contrib.rnn.BasicLSTMCell(lstm_size)
+```

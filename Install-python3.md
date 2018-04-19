@@ -9,7 +9,7 @@ pip3 install sklearn
 pip3 install --upgrade tensorflow
 ```
 
-To see teh list of installed libraries:
+To see list of installed libraries:
 ```python
 pip3 list
 ```
