@@ -1,12 +1,16 @@
 # Generalized Linear Models
 
 ----
+
 ## On this page
 {:.no_toc}
 
 - TOC
 {:toc}
+
 ----
+
+
 
 
 Simulating data:
