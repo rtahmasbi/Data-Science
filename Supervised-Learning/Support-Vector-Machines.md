@@ -23,14 +23,14 @@ subject to all residuals having a value less than <img src="http://latex.codecog
 
 
 
-It is possible that no such function <img src="http://latex.codecogs.com/gif.latex?f(x)" border="0"/> exists to satisfy these constraints for all points. To deal with otherwise infeasible constraints, introduce slack variables <img src="http://latex.codecogs.com/gif.latex?\xi_n" border="0"/> and <img src="http://latex.codecogs.com/gif.latex?\xi_n^*" border="0"/> for each point.
+It is possible that no such function <img src="http://latex.codecogs.com/gif.latex?f(x)" border="0"/> exists to satisfy these constraints for all points. To deal with otherwise infeasible constraints, introduce slack variables <img src="http://latex.codecogs.com/gif.latex?\xi_n" border="0"/> and <img src="http://latex.codecogs.com/gif.latex?\xi_n*" border="0"/> for each point.
 
 
 
 Including slack variables leads to the objective function, also known as the primal formula:
 
 
-<img src="http://latex.codecogs.com/gif.latex?J(\beta)=\frac{1}{2}\beta'\beta + C \sum_{n=1}^N (\xi_n+\xi_n^*)," border="0"/>
+<img src="http://latex.codecogs.com/gif.latex?J(\beta)=\frac{1}{2}\beta'\beta + C \sum_{n=1}^N (\xi_n+\xi_n^{*})," border="0"/>
 
 
 
