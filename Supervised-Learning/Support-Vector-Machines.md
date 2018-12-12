@@ -43,9 +43,9 @@ subject to:
 
 <img src="http://latex.codecogs.com/gif.latex?\forall n:\xi_n\geq 0" border="0"/>
 
-<img src="http://latex.codecogs.com/gif.latex?\forall n:\xi_n^{*}\geq 0" border="0"/>
+<img src="http://latex.codecogs.com/gif.latex?\forall&space;n:\xi_n^{*}\geq 0" border="0"/>
 
-
+<a href="https://www.codecogs.com/eqnedit.php?latex=\forall&space;x&space;\in&space;X,&space;\quad&space;\exists&space;y&space;\leq&space;\epsilon&space;\forall" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\forall&space;x&space;\in&space;X,&space;\quad&space;\exists&space;y&space;\leq&space;\epsilon&space;\forall" title="\forall x \in X, \quad \exists y \leq \epsilon \forall" /></a>
 
 
 
