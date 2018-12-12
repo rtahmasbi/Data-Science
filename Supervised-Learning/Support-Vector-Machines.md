@@ -19,7 +19,7 @@ and ensure that it is as flat as possible, find <img src="http://latex.codecogs.
 subject to all residuals having a value less than <img src="http://latex.codecogs.com/gif.latex?\epsilon" border="0"/>; or, in equation form:
 
 
-<img src="http://latex.codecogs.com/gif.latex?|y_n-(x_n'\beta+b)|\leq \epsilon \forall n." border="0"/>
+<img src="http://latex.codecogs.com/gif.latex?|y_n-(x_n'\beta+b)|\leq \epsilon\forall n." border="0"/>
 
 
 
@@ -33,10 +33,17 @@ Including slack variables leads to the objective function, also known as the pri
 <img src="http://latex.codecogs.com/gif.latex?J(\beta)=\frac{1}{2}\beta'\beta + C \sum_{n=1}^N (\xi_n+\xi_n^{*})," border="0"/>
 
 
-
 subject to:
 
 
+
+<img src="http://latex.codecogs.com/gif.latex?\forall n: y_n-(x_n'\beta+b)\leq \epsilon+\xi_n" border="0"/>
+
+<img src="http://latex.codecogs.com/gif.latex?\forall n:(x_n'\beta+b)-y_n\leq \epsilon+\xi_n" border="0"/>
+
+<img src="http://latex.codecogs.com/gif.latex?\forall n:\xi_n\geq 0" border="0"/>
+
+<img src="http://latex.codecogs.com/gif.latex?\forall n:\xi_n^{*}\geq 0" border="0"/>
 
 
 
