@@ -140,7 +140,7 @@ Ordinary least squares seeks to minimize the sum of squared residuals, which can
 where <img src="http://latex.codecogs.com/gif.latex?\left\|\cdot \right\|^{2}"/> is the Euclidean norm. In order to give preference to a particular solution with desirable properties, a {\bf regularization} term can be included in this minimization:
 
 
-<img src="http://latex.codecogs.com/gif.latex?\|A\mathbf {x} -\mathbf {b} \|^{2}+\|\Gamma \mathbf {x} \|^{2}"/>
+<img src="http://latex.codecogs.com/gif.latex?\|A\mathbf{x}-\mathbf {b} \|^{2}+\|\Gamma\mathbf{x}\|^{2}"/>
 
 
 
@@ -158,7 +158,7 @@ The effect of regularization may be varied via the scale of matrix <img src="htt
 
 
 
-## R with `glmnet` library
+### R with `glmnet` library
 
 ```R
 library(glmnet)
@@ -183,7 +183,7 @@ lines(y_predicted)
 ```
 
 
-R with `MASS` library
+### R with `MASS` library
 ```R
 library(MASS)
 data <- read.table('../Data/boston2.txt')
@@ -211,7 +211,7 @@ lines(y_predicted)
 ```
 
 
-Python3 with `scikit-learn`
+### Python3 with `scikit-learn`
 ```python
 import numpy as np
 from sklearn import linear_model
