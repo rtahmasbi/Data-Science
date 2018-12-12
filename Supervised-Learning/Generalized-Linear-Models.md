@@ -144,7 +144,7 @@ where <img src="http://latex.codecogs.com/gif.latex?\left\|\cdot \right\|^{2}"/>
 
 
 
-for some suitably chosen Tikhonov matrix, <img src="http://latex.codecogs.com/gif.latex?\Gamma"/>. In many cases, this matrix is chosen as a multiple of the identity matrix (<img src="http://latex.codecogs.com/gif.latex?\Gamma =\alpha I"/>), giving preference to solutions with smaller norms; this is known as <img src="http://latex.codecogs.com/gif.latex?L_2"/> regularization.
+for some suitably chosen Tikhonov matrix, <img src="http://latex.codecogs.com/gif.latex?\Gamma"/>. In many cases, this matrix is chosen as a multiple of the identity matrix (<img src="http://latex.codecogs.com/gif.latex?\Gamma=\alpha I"/>), giving preference to solutions with smaller norms; this is known as <img src="http://latex.codecogs.com/gif.latex?L_2"/> regularization.
 
 
 An explicit solution, denoted by <img src="http://latex.codecogs.com/gif.latex?\hat{\mathbf{x}}"/>, is given by:
@@ -153,7 +153,7 @@ An explicit solution, denoted by <img src="http://latex.codecogs.com/gif.latex?\
 <img src="http://latex.codecogs.com/gif.latex?\hat {\mathbf {x}}=(A^{\top}A+\Gamma ^{\top}\Gamma)^{-1}A^{\top }\mathbf {b}"/>
 
 
-The effect of regularization may be varied via the scale of matrix <img src="http://latex.codecogs.com/gif.latex?\Gamma"/>.  For <img src="http://latex.codecogs.com/gif.latex?\Gamma =0"/> this reduces to the unregularized least squares solution provided that <img src="http://latex.codecogs.com/gif.latex?(A^\top A)^{-1}"/> exists.
+The effect of regularization may be varied via the scale of matrix <img src="http://latex.codecogs.com/gif.latex?\Gamma"/>.  For <img src="http://latex.codecogs.com/gif.latex?\Gamma =0"/> this reduces to the unregularized least squares solution provided that <img src="http://latex.codecogs.com/gif.latex?{(A^\top A)}^{-1}"/> exists.
 
 
 
