@@ -1,7 +1,10 @@
 # Support vector machines
 
+[Reference](https://www.mathworks.com/help/stats/understanding-support-vector-machine-regression.html)
+
+
 ## Linear SVM Regression: Primal Formula
-Suppose we have a set of training data where <img src="http://latex.codecogs.com/gif.latex?x_n" border="0"/> is a multivariate set of N observations with observed response values <img src="http://latex.codecogs.com/gif.latex?y_n" border="0"/>.
+Suppose we have a set of training data where <img[Reference]{https://www.mathworks.com/help/stats/understanding-support-vector-machine-regression.html} src="http://latex.codecogs.com/gif.latex?x_n" border="0"/> is a multivariate set of N observations with observed response values <img src="http://latex.codecogs.com/gif.latex?y_n" border="0"/>.
 
 
 To find the linear function
@@ -52,12 +55,17 @@ The constant <img src="http://latex.codecogs.com/gif.latex?C"/> is the box const
 
 The linear <img src="http://latex.codecogs.com/gif.latex?\epsilon"/>-insensitive loss function ignores errors that are within <img src="http://latex.codecogs.com/gif.latex?\epsilon"/> distance of the observed value by treating them as equal to zero
 
-<img src="http://latex.codecogs.com/gif.latex?L_\epsilon=\left\{\begin{matrix}{ll}0 & \text{ if } |y-f(x)|\leq \epsilon\\|y-f(x)|-\epsilon & \text{ otherwise }\end{matrix}\right."/>
+<img src="http://latex.codecogs.com/gif.latex?L_\epsilon=\left\{\begin{matrix}0 & \text{ if } |y-f(x)|\leq \epsilon\\|y-f(x)|-\epsilon & \text{ otherwise }\end{matrix}\right."/>
 
 
 
 
 ## Linear SVM Regression: Dual Formula
+
+## Nonlinear SVM Regression: Primal Formula
+
+## Nonlinear SVM Regression: Dual Formula
+
 
 
 
