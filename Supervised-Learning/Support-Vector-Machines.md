@@ -52,7 +52,7 @@ The constant <img src="http://latex.codecogs.com/gif.latex?C"/> is the box const
 
 The linear <img src="http://latex.codecogs.com/gif.latex?\epsilon"/>-insensitive loss function ignores errors that are within <img src="http://latex.codecogs.com/gif.latex?\epsilon"/> distance of the observed value by treating them as equal to zero
 
-<img src="http://latex.codecogs.com/gif.latex?L_\epsilon=\left\{\begin{matrix}0 & \text{ if } |y-f(x)|\leq \epsilon\\|y-f(x)|-\epsilon & \text{ otherwise }\end{matrix}\right."/>
+<img src="http://latex.codecogs.com/gif.latex?L_\epsilon=\left\{\begin{matrix}{ll}0 & \text{ if } |y-f(x)|\leq \epsilon\\|y-f(x)|-\epsilon & \text{ otherwise }\end{matrix}\right."/>
 
 
 
