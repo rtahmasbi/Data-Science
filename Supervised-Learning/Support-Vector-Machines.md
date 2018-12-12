@@ -19,7 +19,7 @@ and ensure that it is as flat as possible, find <img src="http://latex.codecogs.
 subject to all residuals having a value less than <img src="http://latex.codecogs.com/gif.latex?\epsilon" border="0"/>; or, in equation form:
 
 
-<img src="http://latex.codecogs.com/gif.latex?|y_n-(x_n'\beta+b)|\leq \epsilon\forall n." border="0"/>
+<img src="http://latex.codecogs.com/gif.latex?|y_n-(x_n'\beta+b)|\leq \epsilon\forall&space;n." border="0"/>
 
 
 
@@ -37,15 +37,32 @@ subject to:
 
 
 
-<img src="http://latex.codecogs.com/gif.latex?\forall n: y_n-(x_n'\beta+b)\leq \epsilon+\xi_n" border="0"/>
+<img src="http://latex.codecogs.com/gif.latex?\forall&space;n: y_n-(x_n'\beta+b)\leq \epsilon+\xi_n" border="0"/>
 
-<img src="http://latex.codecogs.com/gif.latex?\forall n:(x_n'\beta+b)-y_n\leq \epsilon+\xi_n" border="0"/>
+<img src="http://latex.codecogs.com/gif.latex?\forall&space;n:(x_n'\beta+b)-y_n\leq \epsilon+\xi_n" border="0"/>
 
-<img src="http://latex.codecogs.com/gif.latex?\forall n:\xi_n\geq 0" border="0"/>
+<img src="http://latex.codecogs.com/gif.latex?\forall&space;n:\xi_n\geq 0" border="0"/>
 
 <img src="http://latex.codecogs.com/gif.latex?\forall&space;n:\xi_n^{*}\geq 0" border="0"/>
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=\forall&space;x&space;\in&space;X,&space;\quad&space;\exists&space;y&space;\leq&space;\epsilon&space;\forall" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\forall&space;x&space;\in&space;X,&space;\quad&space;\exists&space;y&space;\leq&space;\epsilon&space;\forall" title="\forall x \in X, \quad \exists y \leq \epsilon \forall" /></a>
+
+
+The constant <img src="http://latex.codecogs.com/gif.latex?C"/> is the box constraint, a positive numeric value that controls the penalty imposed on observations that lie outside the epsilon margin (<img src="http://latex.codecogs.com/gif.latex?\epsilon"/>) and helps to prevent overfitting (regularization).
+
+
+The linear <img src="http://latex.codecogs.com/gif.latex?\epsilon"/>-insensitive loss function ignores errors that are within <img src="http://latex.codecogs.com/gif.latex?\epsilon"/> distance of the observed value by treating them as equal to zero
+
+<img src="http://latex.codecogs.com/gif.latex?L_\epsilon=\left\{\begin{matrix}
+0 & if |y-f(x)|\leq \epsilon\\
+|y-f(x)|-\epsilon & otherwise
+\end{matrix}\right."/>
+
+
+
+
+## Linear SVM Regression: Dual Formula
+
+
 
 
 
