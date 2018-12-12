@@ -5,7 +5,7 @@ R with `e1071` library
 library(e1071)
 
 #Fit a model. The function syntax is very similar to lm function
-model_svm <- svm(y ~ x , train)
+model_svm <- svm(y ~ x , data = train, scale = TRUE, kernel ="radial")
 #Use the predictions on the data
 pred <- predict(model_svm, train)
 
