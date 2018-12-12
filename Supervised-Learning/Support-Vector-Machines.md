@@ -1,5 +1,9 @@
 # Support vector machines
 
+<img src="https://latex.codecogs.com/gif.latex?O_t=\text { Onset event at time bin } t " />
+
+
+
 R with `e1071` library
 ```R
 library(e1071)
