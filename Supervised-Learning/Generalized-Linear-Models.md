@@ -122,7 +122,7 @@ Ridge regression uses L2 regularisation to weight/penalise residuals when the pa
 Ridge regression or in machine learning it is known as weight decay, or Tikhonov-Miller method, the Phillips--Twomey method, the constrained linear inversion method, is the most commonly used method of regularization of \emph{ill-posed} problems.
 
 
-Suppose that for a known matrix <img src="http://latex.codecogs.com/gif.latex?A"/> dd <a src="http://latex.codecogs.com/gif.latex?A"/>  and vector <img src="http://latex.codecogs.com/gif.latex?\mathbf{b}"/>, we wish to find a vector <img src="http://latex.codecogs.com/gif.latex?\mathbf{x}"/>  such that:
+Suppose that for a known matrix <img src="http://latex.codecogs.com/gif.latex?A"/> and vector <img src="http://latex.codecogs.com/gif.latex?\mathbf{b}"/>, we wish to find a vector <img src="http://latex.codecogs.com/gif.latex?\mathbf{x}"/>  such that:
 
 <img src="http://latex.codecogs.com/gif.latex?A\mathbf{x} =\mathbf{b}"/>
 
@@ -137,14 +137,23 @@ Ordinary least squares seeks to minimize the sum of squared residuals, which can
 
 
 
-where $\left\|\cdot \right\|^{2}$ is the Euclidean norm. In order to give preference to a particular solution with desirable properties, a {\bf regularization} term can be included in this minimization:
-\[ \|A\mathbf {x} -\mathbf {b} \|^{2}+\|\Gamma \mathbf {x} \|^{2}\]
-for some suitably chosen Tikhonov matrix, $\Gamma$. In many cases, this matrix is chosen as a multiple of the identity matrix ($\Gamma =\alpha I$), giving preference to solutions with smaller norms; this is known as $L_2$ regularization.
+where <img src="http://latex.codecogs.com/gif.latex?\left\|\cdot \right\|^{2}"/> is the Euclidean norm. In order to give preference to a particular solution with desirable properties, a {\bf regularization} term can be included in this minimization:
 
 
-An explicit solution, denoted by $\hat{\mathbf {x}}$, is given by:
-\[\hat {\mathbf {x}}=(A^{\top}A+\Gamma ^{\top}\Gamma)^{-1}A^{\top }\mathbf {b}\]
-The effect of regularization may be varied via the scale of matrix $\Gamma$.  For $\Gamma =0$ this reduces to the unregularized least squares solution provided that $(A^\top A)^{-1}$ exists.
+<img src="http://latex.codecogs.com/gif.latex?\|A\mathbf {x} -\mathbf {b} \|^{2}+\|\Gamma \mathbf {x} \|^{2}"/>
+
+
+
+for some suitably chosen Tikhonov matrix, <img src="http://latex.codecogs.com/gif.latex?\Gamma"/>. In many cases, this matrix is chosen as a multiple of the identity matrix (<img src="http://latex.codecogs.com/gif.latex?\Gamma =\alpha I"/>), giving preference to solutions with smaller norms; this is known as <img src="http://latex.codecogs.com/gif.latex?L_2"/> regularization.
+
+
+An explicit solution, denoted by <img src="http://latex.codecogs.com/gif.latex?\hat{\mathbf {x}}<img src="http://latex.codecogs.com/gif.latex?"/>", is given by:
+
+
+<img src="http://latex.codecogs.com/gif.latex?\hat {\mathbf {x}}=(A^{\top}A+\Gamma ^{\top}\Gamma)^{-1}A^{\top }\mathbf {b}"/>
+
+
+The effect of regularization may be varied via the scale of matrix <img src="http://latex.codecogs.com/gif.latex?\Gamma/>.  For $\Gamma =0$ this reduces to the unregularized least squares solution provided that <img src="http://latex.codecogs.com/gif.latex?(A^\top A)^{-1}"/> exists.
 
 
 
