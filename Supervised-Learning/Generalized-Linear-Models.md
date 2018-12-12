@@ -1,5 +1,14 @@
 # Generalized Linear Models
 
+----
+## On this page
+{:.no_toc}
+
+- TOC
+{:toc}
+----
+
+
 Simulating data:
 ```python
 from sklearn.datasets import make_regression
