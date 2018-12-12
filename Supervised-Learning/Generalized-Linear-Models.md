@@ -122,7 +122,7 @@ Ridge regression uses L2 regularisation to weight/penalise residuals when the pa
 Ridge regression or in machine learning it is known as weight decay, or Tikhonov-Miller method, the Phillips--Twomey method, the constrained linear inversion method, is the most commonly used method of regularization of \emph{ill-posed} problems.
 
 
-Suppose that for a known matrix <img src="http://latex.codecogs.com/gif.latex?A\> and vector <img src="http://latex.codecogs.com/gif.latex?\mathbf{b}\>, we wish to find a vector $\mathbf {x}$  such that:
+Suppose that for a known matrix <img src="http://latex.codecogs.com/gif.latex?A/> and vector <img src="http://latex.codecogs.com/gif.latex?\mathbf{b}\>, we wish to find a vector $\mathbf {x}$  such that:
 \[A\mathbf {x} =\mathbf {b}\]
 The standard approach is ordinary least squares linear regression. However, if no $\mathbf {x}$ satisfies the equation or more than one $\mathbf {x}$ does -- that is, the solution is not unique -- the problem is said to be ill posed. In such cases, ordinary least squares estimation leads to an overdetermined (over-fitted), or more often an underdetermined (under-fitted) system of equations.
 
