@@ -19,11 +19,11 @@ and ensure that it is as flat as possible, find <img src="http://latex.codecogs.
 subject to all residuals having a value less than <img src="http://latex.codecogs.com/gif.latex?\epsilon" border="0"/>; or, in equation form:
 
 
-<img src="http://latex.codecogs.com/gif.latex?\forall n: |y_n-(x_n'\beta+b)|\leq \epsilon." border="0"/>
+<img src="http://latex.codecogs.com/gif.latex?|y_n-(x_n'\beta+b)|\leq \epsilon \forall n." border="0"/>
 
 
 
-It is possible that no such function <img src="http://latex.codecogs.com/gif.latex?f(x)" border="0"/> exists to satisfy these constraints for all points. To deal with otherwise infeasible constraints, introduce slack variables <img src="http://latex.codecogs.com/gif.latex?\xi_n" border="0"/> and <img src="http://latex.codecogs.com/gif.latex?\xi_n*" border="0"/> for each point.
+It is possible that no such function <img src="http://latex.codecogs.com/gif.latex?f(x)" border="0"/> exists to satisfy these constraints for all points. To deal with otherwise infeasible constraints, introduce slack variables <img src="http://latex.codecogs.com/gif.latex?\xi_n" border="0"/> and <img src="http://latex.codecogs.com/gif.latex?\xi_n^{*}" border="0"/> for each point.
 
 
 
