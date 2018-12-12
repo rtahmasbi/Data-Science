@@ -2,6 +2,8 @@
 
 <img src="https://latex.codecogs.com/gif.latex?O_t=\text { Onset event at time bin } t " />
 
+<img src="http://latex.codecogs.com/gif.latex?1+sin(x)" border="0"/>
+
 
 
 R with `e1071` library
